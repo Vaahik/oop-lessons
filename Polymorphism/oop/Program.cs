@@ -10,11 +10,15 @@ namespace Polymorphism
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("--Compile Time Polymorphism--");
             Calculate c = new Calculate();
             c.AddNumbers(1, 3);
             c.AddNumbers(1, 4, 7);
-            Console.WriteLine("\nPress Enter Key to Exit..");
-            Console.ReadLine();
+            Console.WriteLine("--Run Time Polymorphism--");
+            Details details = new Details();
+            details.GetInfo();
+            Users users = new Users();
+            users.GetInfo(); 
         }
     }
 }
