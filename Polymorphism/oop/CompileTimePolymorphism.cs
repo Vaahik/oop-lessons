@@ -4,15 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace oop
+namespace Polymorphism
 {
     class CompileTimePolymorphism
     {
         public class Calculate
         {
-            public Calculate()
+            public void AddNumbers(int a, int b)
             {
-
+                Console.WriteLine("a+b={0}", a + b);
+            }
+            public void AddNumbers (int a, int b, int c)
+            {
+                Console.WriteLine("a+b+c={0}", a + b + c);
             }
         }
     }
